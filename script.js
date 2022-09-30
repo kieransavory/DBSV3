@@ -7,7 +7,7 @@ function bgChanger() {
     let heroOne = document.getElementById('heroOne')
 
     buttonOne.addEventListener('click', () => {
-        heroOne.style.backgroundImage = "url(dbsheader2.jpg)";
+        heroOne.style.backgroundImage = "url(DBSheader2.jpg)";
         buttonOne.style.backgroundColor = "navy";
         buttonTwo.style.backgroundColor = "white";
         buttonThree.style.backgroundColor = "white";
