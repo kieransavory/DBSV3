@@ -22,6 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 5;
 }
 
 .navbar img{
@@ -80,6 +81,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s;
 }
 
 .herotext{
@@ -99,6 +101,33 @@
 
 .herotext p{
     font-weight: 100;
+}
+
+.selectors{
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    height: 5vw;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selectors button{
+    width: 5vw;
+    height: 1vw;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+    opacity: 0.5;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.selectors button:hover{
+    transition: 0.5s;
+    opacity: 1
 }
 
 
