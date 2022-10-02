@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="shortcut icon" href="dbsfavicon.png" type="image/x-icon">
     <title>DBS Building Services</title>
 </head>
 <body>
 
+    <!-- NAVBAR - DESKTOP AND MOBILE -->
+
     <nav class="navbar">
+
         <a href="#heroOne"><img src="dbslogo.webp" alt="DBS Building Services Logo"></a>
         <ul>
             <li><a href="#heroOne">Home</a></li>
@@ -18,7 +22,17 @@
             <li><a href="">Projects</a></li>
             <li><a href="">Contact</a></li>
         </ul>
+
+    <!-- Hamburger menu and relative functionality -->
+
+        <a href="#" class="menutoggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
     </nav>
+
+
 
 
 
@@ -32,9 +46,9 @@
         </div>
         
         <div class="selectors" >
-            <button style="background-color: blue;" onclick="bgChanger();" id="heroButtonOne"></button>
-            <button onclick="bgChanger();" id="heroButtonTwo"></button>
-            <button onclick="bgChanger();" id="heroButtonThree"></button>
+            <button style="background-color: blue;" onclick="bgChangerOne();" id="heroButtonOne"></button>
+            <button onclick="bgChangerTwo();" id="heroButtonTwo"></button>
+            <button onclick="bgChangerThree();" id="heroButtonThree"></button>
         </div>
 
 
