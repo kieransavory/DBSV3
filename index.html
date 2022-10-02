@@ -10,6 +10,23 @@
 </head>
 <body>
 
+
+    <nav id="mobileNav" class="mobilenavlist">
+
+        <button onclick="menuToggle();" class="menuclose">X</button>
+        
+        <ul>
+            <li><a onclick="menuToggle();" href="#heroOne">Home</a></li>
+            <li><a onclick="menuToggle();" href="#hero2">About</a></li>
+            <li><a href="">DBS Design</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+
     <!-- NAVBAR - DESKTOP AND MOBILE -->
 
     <nav class="navbar">
@@ -25,12 +42,13 @@
 
     <!-- Hamburger menu and relative functionality -->
 
-        <a href="#" class="menutoggle">
+        <button onclick="menuToggle();" class="menutoggle">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </a>
+        </button>
     </nav>
+
 
 
 

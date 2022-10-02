@@ -42,7 +42,9 @@ function bgChangerThree() {
 }
 
 
-
+function menuToggle() {
+    document.getElementById('mobileNav').classList.toggle('active');
+}
 
 
 
