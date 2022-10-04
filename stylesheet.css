@@ -197,39 +197,11 @@
 .aboutbox p{
     font-weight: 100;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     margin: 10%;
     line-height: 1.6;
 }
 
-
-
-.dbsdesign{
-    width: 100vw;
-    height: 100vh;
-    background-image: url(dbsdesign.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.dbsdesign h2{
-    display: block;
-    text-align: center;
-    font-size: 75px;
-    font-weight: 100;
-    margin-top: 75px;
-    color: whitesmoke;
-}
-
-.dbsdesign p{
-    display: block;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 100;
-    margin: 10px;
-    color: whitesmoke;
-}
 
 
 
@@ -370,6 +342,73 @@
         height: 3vw;
         margin: 20px;
         border-radius: 10px;
+    }
+
+
+/* About us mobile styling */
+
+    .hero2{
+        width: 100vw;
+        height: 125vh;
+        background-color: whitesmoke;
+    }   
+
+    .hero2 h2{
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 100;
+        margin-top: 75px;
+    }
+
+    .hero2 p{
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 100;
+        margin: 10px;
+    }   
+
+
+
+    .aboutusdiv{
+        width: 100vw;
+        height: 130vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    
+    }
+    
+    
+    .aboutbox{
+        width: 90vw;
+        height: 75vh;
+        margin: 10%;
+        text-align: center;
+    }
+
+    .aboutbox hr {
+        display: none;
+    }
+    
+    .aboutbox h3{
+        font-weight: 100;
+        font-size: 30px;
+        margin: 1%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: lightslategray;
+        color: whitesmoke;
+        border-radius: 10px;
+    }
+    
+    .aboutbox p{
+        font-weight: 100;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        margin: 3%;
+        line-height: 1.6;
     }
 
 
