@@ -203,6 +203,37 @@
 }
 
 
+/* DBS Design desktop styling */
+
+.dbsdesign{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(dbsdesign.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dbsdesign h2{
+    display: block;
+    text-align: center;
+    font-size: 75px;
+    font-weight: 100;
+    margin-top: 75px;
+    color: whitesmoke;
+}
+
+.dbsdesign p{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+    margin: 10px;
+    color: whitesmoke;
+    font-style: italic;
+}
+
+
 
 
 
@@ -409,6 +440,37 @@
         font-size: 18px;
         margin: 3%;
         line-height: 1.6;
+    }
+
+
+    /* DBS Design mobile styling */
+
+    .dbsdesign{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(dbsdesign.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .dbsdesign h2{
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 100;
+        margin-top: 75px;
+        color: whitesmoke;
+}
+
+    .dbsdesign p{
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 100;
+        margin: 10px;
+        color: whitesmoke;
+        font-style: italic;
     }
 
 
