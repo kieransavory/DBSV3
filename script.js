@@ -1,4 +1,4 @@
-// Functions to change background via selector icons on hero section of landing page. 
+// Functions to change background via selector buttons on hero section of landing page. 
 
 function bgChangerOne() {
 
@@ -42,10 +42,9 @@ function bgChangerThree() {
 }
 
 
+// Mobile hamburger menu operation
+
+
 function menuToggle() {
     document.getElementById('mobileNav').classList.toggle('active');
 }
-
-
-
-

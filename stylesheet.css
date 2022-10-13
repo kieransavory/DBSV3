@@ -161,8 +161,9 @@
     text-align: center;
     font-size: 75px;
     font-weight: 100;
-    margin-top: 75px;
-    
+    margin-top: 65px;
+    padding: 10px;
+    color: black;   
 }
 
 .hero2 p{
@@ -222,9 +223,10 @@
     text-align: center;
     font-size: 75px;
     font-weight: 100;
-    margin-top: 75px;
+    margin-top: 65px;
+    padding: 10px;
     color: whitesmoke;
-    text-shadow: 2px 2px 20px black;
+    text-shadow: 1px 1px 10px black;
 }
 
 .dbsdesign p{
@@ -253,6 +255,60 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 100;
     text-shadow: 2px 2px 10px black;
+}
+
+
+/* Image gallery styling for desktop */
+
+
+.gallery{
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.gallery h2{
+    display: block;
+    text-align: center;
+    font-size: 75px;
+    font-weight: 100;
+    margin-top: 65px;
+    padding: 10px;
+    color: black;
+}
+
+.gallery p{
+    transition: all 0.5s;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+    margin: 10px;
+}
+
+
+.gallerydiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 75vh;
+    margin: auto;
+}
+
+.gallerydiv img{
+    transition: all 0.5s;
+    width: 15vw;
+    height: 20vh;
+    margin: 10px;
+    filter: brightness(100%);
+    cursor: pointer;
+}
+
+.gallerydiv img:hover{
+    filter: brightness(120%);
+    transform: scale(1.01);
 }
 
 
