@@ -48,3 +48,15 @@ function bgChangerThree() {
 function menuToggle() {
     document.getElementById('mobileNav').classList.toggle('active');
 }
+
+
+//Open image gallery modal
+
+function carouselOpen() {
+    document.getElementById('imageModal').classList.toggle('active');
+}
+
+//Close image gallery modal
+function carouselClose() {
+    document.getElementById('imageModal').classList.toggle('active');
+}

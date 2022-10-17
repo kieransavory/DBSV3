@@ -219,6 +219,7 @@
 }
 
 .dbsdesign h2{
+    transition: all 0.5s;
     display: block;
     text-align: center;
     font-size: 75px;
@@ -230,6 +231,7 @@
 }
 
 .dbsdesign p{
+    transition: all 0.5s;
     display: block;
     text-align: center;
     font-size: 25px;
@@ -292,7 +294,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 90vw;
+    width: 60vw;
     height: 75vh;
     margin: auto;
 }
@@ -309,6 +311,74 @@
 .gallerydiv img:hover{
     filter: brightness(120%);
     transform: scale(1.01);
+}
+
+
+
+
+.modal{
+    display: none;
+}
+
+.modal.active{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalLabel{
+    display: block;
+    position: fixed;
+    text-align: center;
+    bottom: 20px;
+    color: white;
+    font-size: 2rem;
+}
+
+.closebutton{
+    transition: all 0.5s;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: 100;
+}
+
+.closebutton:hover{
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.gallerybutton{
+    margin: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 5rem;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.gallerybutton:hover{
+    opacity: 0.5;
+}
+
+
+.modalcenter{
+    width: 80vw;
+    height: 80vh;
+    border: 1px dashed white;
 }
 
 
@@ -568,6 +638,109 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 100;
         text-shadow: 1px 1px 15px black;
+    }
+
+/* Mobile image gallery styling */
+
+    .gallery h2{
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 100;
+        margin-top: 75px;
+        color: black;
+    }
+    
+    .gallery p{
+        transition: all 0.5s;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 100;
+        margin: 10px;
+    }
+    
+    
+    .gallerydiv{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 99vw;
+        height: 80vh;
+        margin: auto;
+    }
+    
+    .gallerydiv img{
+        transition: all 0.5s;
+        width: auto;
+        height: auto;
+        margin: 10px;
+        filter: brightness(100%);
+        cursor: pointer;
+    }
+
+    /* Mobile mobal display adjustments */
+
+    .modal{
+        display: none;
+    }
+    
+    .modal.active{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(0, 0, 0);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .closebutton{
+        transition: none;
+        opacity: 1;
+        position: fixed;
+        top: 5px;
+        right: 15px;
+        font-size: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-weight: 100;
+    }
+    
+    .gallerybutton{
+        margin: 5px;
+        background-color: transparent;
+        border: none;
+        font-size: 2.5rem;
+        color: white;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    
+    .gallerybutton:hover{
+        opacity: 0.5;
+    }
+    
+    
+    .modalcenter{
+        width: 80vw;
+        height: 80vh;
+        border: 1px dashed white;
+    }
+
+    .modalLabel{
+        display: block;
+        position: fixed;
+        text-align: center;
+        bottom: 15px;
+        color: white;
+        font-size: 1.5rem;
     }
 
 

@@ -65,9 +65,9 @@
         </div>
         
         <div class="selectors" >
-            <button name="Image Slide One" style="background-color: blue;" onclick="bgChangerOne();" id="heroButtonOne"></button>
-            <button name="Image Slide Two" onclick="bgChangerTwo();" id="heroButtonTwo"></button>
-            <button name="Image Slide Three" onclick="bgChangerThree();" id="heroButtonThree"></button>
+            <button aria-label="Image Slide One" name="Image Slide One" style="background-color: blue;" onclick="bgChangerOne();" id="heroButtonOne"></button>
+            <button aria-label="Image Slide Two" name="Image Slide Two" onclick="bgChangerTwo();" id="heroButtonTwo"></button>
+            <button aria-label="Image Slide Three" name="Image Slide Three" onclick="bgChangerThree();" id="heroButtonThree"></button>
         </div>
 
 
@@ -106,7 +106,7 @@
         <h2>DBS Design</h2>
         <p>Quality every step of the way</p>
         <div loading="lazy" class="dbsdesigndiv">
-            <p>At DBS Design Services, we proudly offer quality services to our clients from the get go. From your initial idea, we are able to create full plans ready for planning permission, and detailed ray-traced 
+            <p>At DBS Design Services, we proudly offer quality services to our clients from the start. From your initial idea, we are able to create full plans ready for planning permission, and detailed ray-traced 
                 renders using state of the art software. We can help you visualise exactly how your project, regardless of size, will look. Visit our gallery to see examples of our plans and renders. 
             </p>
         </div>
@@ -117,23 +117,26 @@
         <h2>Projects</h2>
         <p id="gallerytext" style="font-style: italic;">View our work below</p>
         <div class="gallerydiv">
-            <img loading="lazy"  id="img1" src="dbsdesign.jpg" alt="">
-            <img loading="lazy"  id="img2" src="dbsdesign.jpg" alt="">
-            <img loading="lazy"  id="img3" src="dbsdesign.jpg" alt="">
-            <img loading="lazy"  id="img4" src="dbsdesign.jpg" alt="">
-            <img loading="lazy"  id="img5" src="dbsdesign.jpg" alt="">
-            <img loading="lazy"  id="img6" src="dbsdesign.jpg" alt="">
-            <img loading="lazy"  id="img7" src="dbsdesign.jpg" alt="">
-            <img loading="lazy"  id="img8" src="dbsdesign.jpg" alt="">
-            <img loading="lazy"  id="img9" src="dbsdesign.jpg" alt="">
-            <img loading="lazy"  id="img10" src="dbsdesign.jpg" alt="">
-            <img loading="lazy"  id="img11" src="dbsdesign.jpg" alt="">
-            <img loading="lazy"  id="img12" src="dbsdesign.jpg" alt="">
-            <img loading="lazy"  id="img13" src="dbsdesign.jpg" alt="">
-            <img loading="lazy"  id="img14" src="dbsdesign.jpg" alt="">
-            <img loading="lazy"  id="img15" src="dbsdesign.jpg" alt="">
+            <img onclick="carouselOpen();" loading="lazy"  id="img1" src="dbsdesign.jpg" alt="">
+            <img onclick="carouselOpen();" loading="lazy"  id="img2" src="dbsdesign.jpg" alt="">
+            <img onclick="carouselOpen();" loading="lazy"  id="img3" src="dbsdesign.jpg" alt="">
+            <img onclick="carouselOpen();" loading="lazy"  id="img4" src="dbsdesign.jpg" alt="">
+            <img onclick="carouselOpen();" loading="lazy"  id="img5" src="dbsdesign.jpg" alt="">
+            <img onclick="carouselOpen();" loading="lazy"  id="img6" src="dbsdesign.jpg" alt="">
+            <img onclick="carouselOpen();" loading="lazy"  id="img6" src="dbsdesign.jpg" alt="">
+            <img onclick="carouselOpen();" loading="lazy"  id="img8" src="dbsdesign.jpg" alt="">
+            <img onclick="carouselOpen();" loading="lazy"  id="img9" src="dbsdesign.jpg" alt="">
         </div>
 
+    </section>
+
+
+    <section id="imageModal" class="modal">
+        <button class="closebutton" onclick="carouselClose();" aria-label="Close Image Slideshow" >X</button>
+        <button aria-label="Image Slide Left" class="gallerybutton" >&larr;</button>
+        <div class="modalcenter"></div>
+        <button aria-label="Image Slide Right" class="gallerybutton" >&rarr;</button>
+            <p class="modalLabel">DBS Design - Our Renders.</p>
     </section>
 
 
