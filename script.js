@@ -90,4 +90,10 @@ function darkMode() {
         })
 }
 
+
+// TO BE IMPLEMENTED - ANCHOR TAGS TO BE REPLACED IN ORDER TO IMPROVE WEBSITE UX. 
+// function aboutTest() {
+//     let newScroll = document.getElementById('hero2').offsetTop;
+//     window.scrollTo(0, newScroll);
+// }
     
