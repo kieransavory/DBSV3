@@ -122,6 +122,7 @@
 .hero{
     width: 100vw;
     height: 100vh;
+    animation: fadeIn 1s;
     background-image: url(dbskitchen.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -134,6 +135,7 @@
 
 .herotext{
     text-align: center;
+    animation: fadeIn 2s;
     color: whitesmoke;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
