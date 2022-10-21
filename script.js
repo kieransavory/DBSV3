@@ -103,18 +103,6 @@ function returnToTop() {
     window.scrollTo(0,0);
 }
 
-// Dark mode button functionality 
-
-function darkMode() {
-    let darkModeButton = document.getElementById('darkmodebutton');
-    let darkModeSlide  = document.getElementById('darkmodeslide');
-
-        darkModeButton.addEventListener('click', () => {
-            darkModeSlide.style.float = right;
-
-        })
-}
-
 
 // Navbar scroll position on list item click functionality for DESKTOP, LAPTOP AND TABLET. 
 
