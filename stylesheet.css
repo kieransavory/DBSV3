@@ -6,6 +6,33 @@
     scroll-behavior: smooth;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+  
+/* Scrollbar styling */
+
+
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: whitesmoke, slategrey;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: whitesmoke;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: slategrey;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(70, 80, 90);
+  }
+
 
 
 
@@ -88,7 +115,7 @@
 .hero{
     width: 100vw;
     height: 100vh;
-    background-image: url(DBSheader2.jpg);
+    background-image: url(dbskitchen.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -314,6 +341,7 @@
 }
 
 
+/* Desktop image gallery modal styling */
 
 
 .modal{
@@ -323,7 +351,7 @@
 .modal.active{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(45deg, black, rgb(63, 66, 100));
     position: fixed;
     top: 0;
     left: 0;
@@ -381,8 +409,37 @@
     border: 1px dashed white;
 }
 
+/* Desktop contact us page styling */
+
+.contactus{
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+}
 
 
+.return{
+    transition: all .5s;
+    animation: fadeIn 2s;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px;
+    font-size: 30px;
+    background-color: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.return:hover{
+    transition: all .5s;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {opacity: 0%}
+    to {opacity: 100%}
+}
 
 
 
@@ -394,7 +451,7 @@
 
 /* Mobile media queries */
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
 
     *{
         scroll-behavior: smooth;
@@ -689,7 +746,6 @@
     .modal.active{
         width: 100vw;
         height: 100vh;
-        background-color: rgb(0, 0, 0);
         position: fixed;
         top: 0;
         left: 0;
@@ -736,13 +792,17 @@
 
     .modalLabel{
         display: block;
-        position: fixed;
+        position: absolute;
         text-align: center;
         bottom: 15px;
         color: white;
         font-size: 1.5rem;
     }
 
+    /* Removal of return arrow on mobile devices */
+    .return{
+       display: none;
+    }
 
 
    
