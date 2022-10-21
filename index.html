@@ -11,34 +11,35 @@
 </head>
 <body>
 
+    <!-- NAVBAR - MOBILE -->
 
     <nav id="mobileNav" class="mobilenavlist">
 
         <button name="Close Menu" onclick="menuToggle();" class="menuclose">X</button>
         
         <ul>
-            <li><a onclick="menuToggle();" href="#heroOne">Home</a></li>
-            <li><a onclick="menuToggle();" href="#hero2">About</a></li>
-            <li><a onclick="menuToggle();" href="#dbsdesign">DBS Design</a></li>
-            <li><a onclick="menuToggle();" href="#gallery">Projects</a></li>
-            <li><a onclick="menuToggle();" href="#contactSection">Contact</a></li>
+            <li><a aria-label="Home" onclick="menuToggleHome();">Home</a></li>
+            <li><a aria-label="About" onclick="menuToggleAbout();">About</a></li>
+            <li><a aria-label="DBS Design" onclick="menuToggleDesign();">DBS Design</a></li>
+            <li><a aria-label="Projects" onclick="menuToggleProjects();">Projects</a></li>
+            <li><a aria-label="Contact" onclick="menuToggle();">Contact</a></li>
         </ul>
     </nav>
 
 
 
 
-    <!-- NAVBAR - DESKTOP AND MOBILE -->
+    <!-- NAVBAR - DESKTOP-->
 
     <nav class="navbar">
 
-        <a href="#heroOne"><img src="dbslogo.webp" alt="DBS Building Services Logo"></a>
+        <a onclick="homeScroll();" ><img src="dbslogo.webp" alt="DBS Building Services Logo"></a>
         <ul>
-            <li><a href="#heroOne">Home</a></li>
-            <li><a href="#hero2">About</a></li>
-            <li><a href="#dbsdesign">DBS Design</a></li>
-            <li><a href="#gallery">Projects</a></li>
-            <li><a href="#contactSection">Contact</a></li>
+            <li><a aria-label="Home" onclick="homeScroll();" >Home</a></li>
+            <li><a aria-label="About" onclick="aboutScroll();">About</a></li>
+            <li><a aria-label="DBS Design" onclick="designScroll();" >DBS Design</a></li>
+            <li><a aria-label="Projects" onclick="projectsScroll();" >Projects</a></li>
+            <li><a aria-label="Contact Us" onclick="contactScroll();" >Contact</a></li>
         </ul>
 
     <!-- Hamburger menu and relative functionality -->

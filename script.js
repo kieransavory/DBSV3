@@ -49,6 +49,31 @@ function menuToggle() {
     document.getElementById('mobileNav').classList.toggle('active');
 }
 
+function menuToggleHome() {
+    homeScroll();
+    menuToggle();
+}
+
+function menuToggleAbout() {
+    aboutScroll();
+    menuToggle();
+}
+
+function menuToggleDesign() {
+    designScroll();
+    menuToggle();
+}
+
+function menuToggleProjects() {
+    projectsScroll();
+    menuToggle();
+}
+
+function menuToggleContact() {
+    contactScroll();
+    menuToggle();
+}
+
 
 //Open image gallery modal
 
@@ -91,9 +116,30 @@ function darkMode() {
 }
 
 
-// TO BE IMPLEMENTED - ANCHOR TAGS TO BE REPLACED IN ORDER TO IMPROVE WEBSITE UX. 
-// function aboutTest() {
-//     let newScroll = document.getElementById('hero2').offsetTop;
-//     window.scrollTo(0, newScroll);
-// }
+// Navbar scroll position on list item click functionality for DESKTOP, LAPTOP AND TABLET. 
+
+function homeScroll() {
+    let newScroll = document.getElementById('heroOne').offsetTop;
+    window.scrollTo(0, newScroll);
+}
+
+function aboutScroll() {
+    let newScroll = document.getElementById('hero2').offsetTop;
+    window.scrollTo(0, newScroll);
+}
+
+function designScroll() {
+    let newScroll = document.getElementById('dbsdesign').offsetTop;
+    window.scrollTo(0, newScroll);
+}
+
+function projectsScroll() {
+    let newScroll = document.getElementById('gallery').offsetTop;
+    window.scrollTo(0, newScroll);
+}
+
+function contactScroll() {
+    let newScroll = document.getElementById('contactSection').offsetTop;
+    window.scrollTo(0, newScroll);
+}
     

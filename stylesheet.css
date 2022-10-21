@@ -33,6 +33,11 @@
     background-color: rgb(70, 80, 90);
   }
 
+  ::selection{
+    background-color: slategray;
+    color: whitesmoke;
+  }
+
 
 
 
@@ -92,6 +97,8 @@
     font-size: 20px;
     font-weight: 100;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    user-select: none;
 }
 
 .navbar ul li a:hover{
