@@ -843,8 +843,9 @@
     }
 
     /* Removal of return arrow on mobile devices */
+
     .return{
-       display: none;
+       display: none !important;
     }
 
 
