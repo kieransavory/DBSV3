@@ -135,24 +135,26 @@
 
 .herotext{
     text-align: center;
-    animation: fadeIn 2s;
     color: whitesmoke;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
 }
 
 .herotext h1{
+    animation: fadeIn 2s;
     font-weight: 400;
     text-shadow: 2px 2px 20px black;
 }
 
 .herotext hr{
     margin: 10px;
+    animation: fadeIn 2.5s;
 }
 
 .herotext p{
     font-weight: 100;
     text-shadow: 2px 2px 20px black;
+    animation: fadeIn 3s;
 }
 
 .selectors{
