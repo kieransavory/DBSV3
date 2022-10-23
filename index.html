@@ -31,15 +31,15 @@
 
     <!-- NAVBAR - DESKTOP-->
 
-    <nav class="navbar">
+    <nav id="desktopNav" class="navbar">
 
         <a onclick="homeScroll();" ><img src="dbslogo.webp" alt="DBS Building Services Logo"></a>
         <ul>
-            <li><a aria-label="Home" onclick="homeScroll();" >Home</a></li>
-            <li><a aria-label="About" onclick="aboutScroll();">About</a></li>
-            <li><a aria-label="DBS Design" onclick="designScroll();" >DBS Design</a></li>
-            <li><a aria-label="Projects" onclick="projectsScroll();" >Projects</a></li>
-            <li><a aria-label="Contact Us" onclick="contactScroll();" >Contact</a></li>
+            <li><a id="homeNav" aria-label="Home" onclick="homeScroll();">Home</a></li>
+            <li><a id="aboutNav" aria-label="About" onclick="aboutScroll();">About</a></li>
+            <li><a id="designNav" aria-label="DBS Design" onclick="designScroll();">DBS Design</a></li>
+            <li><a id="projectNav" aria-label="Projects" onclick="projectsScroll();">Projects</a></li>
+            <li><a style="color: blue;" id="contactNav" aria-label="Contact Us" onclick="contactScroll();">Contact</a></li>
         </ul>
 
     <!-- Hamburger menu and relative functionality -->
@@ -153,6 +153,11 @@
 
     <section id="contactSection" class="contactus">
     </section>
+
+    <footer class="footer">
+    </footer>
+
+
 
     <!-- Top Return Button -->
     <button onclick="returnToTop();" id="returnButton" title="Return to top" aria-label="Return to top." class="return">&uarr;</button>

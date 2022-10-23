@@ -86,17 +86,15 @@ function carouselClose() {
     document.getElementById('imageModal').classList.toggle('active');
 }
 
-
-
-// Return button functionality 
-
+//Document Onscroll events
 document.addEventListener("scroll", () => {
+
     let scrollPosition = window.scrollY; 
 
+    //Return button appears past certain point.
         if (scrollPosition > 2900) {
             document.getElementById('returnButton').style.display = "flex";
         } else document.getElementById('returnButton').style.display = "none";
-
 })
 
 function returnToTop() {
@@ -130,4 +128,6 @@ function contactScroll() {
     let newScroll = document.getElementById('contactSection').offsetTop;
     window.scrollTo(0, newScroll);
 }
+
+
     

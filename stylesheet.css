@@ -26,11 +26,11 @@
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: slategrey;
+    background-color:  rgb(70, 80, 90);
   }
 
   *::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(70, 80, 90);
+    background-color: slategray;
   }
 
   ::selection{
@@ -47,6 +47,7 @@
 .navbar{
     width: 100vw;
     height: 6.5%;
+    transition: all 0.5s;
     position: fixed;
     top: 0;
     background-color: whitesmoke;
@@ -424,14 +425,44 @@
 
 .contactus{
     width: 100vw;
-    height: 100vh;
-    background-color: whitesmoke;
+    height: 80vh;
+    background-color: slategray;
 }
+
+
+.contactform{
+    width: 50vw;
+    height: inherit;
+}
+
+.contactform h2{
+    transition: all 0.5s;
+    display: block;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    font-size: 50px;
+    font-weight: 100;
+    padding: 10px;
+    color: whitesmoke;
+    border-bottom: 1px solid white;
+}
+
+
+.footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(70, 80, 90);
+}
+
+
+
 
 
 .return{
     transition: all .5s;
     animation: fadeIn 2s;
+    display: none;
     position: fixed;
     bottom: 10px;
     right: 2px;
@@ -676,7 +707,7 @@
         font-size: 30px;
         margin: 1%;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: lightslategray;
+        background-color: slategray;
         color: whitesmoke;
         border-radius: 10px;
     }
