@@ -34,6 +34,7 @@
     <nav id="desktopNav" class="navbar">
 
         <a onclick="homeScroll();" ><img src="dbslogo.webp" alt="DBS Building Services Logo"></a>
+        
         <ul>
             <li><a id="homeNav" aria-label="Home" onclick="homeScroll();">Home</a></li>
             <li><a id="aboutNav" aria-label="About" onclick="aboutScroll();">About</a></li>
@@ -125,8 +126,8 @@
         <h2>Projects</h2>
         <p id="gallerytext" style="font-style: italic;">View our work below</p>
         <div class="gallerydiv">
-            <img title="INSERT TITLE" onclick="carouselOpen();" loading="lazy"  id="img1" src="dbsdesign.jpg" alt="">
-            <img title="INSERT TITLE" onclick="carouselOpen();" loading="lazy"  id="img2" src="dbsdesign.jpg" alt="">
+            <img title="INSERT TITLE" onclick="carouselOne();" loading="lazy"  id="img1" src="dbsdesign.jpg" alt="">
+            <img title="INSERT TITLE" onclick="carouselTwo();" loading="lazy"  id="img2" src="dbsdesign.jpg" alt="">
             <img title="INSERT TITLE" onclick="carouselOpen();" loading="lazy"  id="img3" src="dbsdesign.jpg" alt="">
             <img title="INSERT TITLE" onclick="carouselOpen();" loading="lazy"  id="img4" src="dbsdesign.jpg" alt="">
             <img title="INSERT TITLE" onclick="carouselOpen();" loading="lazy"  id="img5" src="dbsdesign.jpg" alt="">
@@ -144,9 +145,9 @@
 
     <section id="imageModal" class="modal">
         <button class="closebutton" onclick="carouselClose();" aria-label="Close Image Slideshow" >X</button>
-        <button aria-label="Image Slide Left" class="gallerybutton" >&larr;</button>
-        <div class="modalcenter"></div>
-        <button aria-label="Image Slide Right" class="gallerybutton" >&rarr;</button>
+        <button id="modalLeft" aria-label="Image Slide Left" class="gallerybutton">&larr;</button>
+        <div id="modalBackground" class="modalcenter"></div>
+        <button id="modalRight" aria-label="Image Slide Right" class="gallerybutton">&rarr;</button>
             <p class="modalLabel">DBS Design - Our Renders.</p>
     </section>
 
