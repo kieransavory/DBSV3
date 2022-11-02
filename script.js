@@ -79,17 +79,22 @@ function menuToggleContact() {
 //FIRST CAROUSEL LOGIC
 function carouselOne() {
 
+
     carouselOpen();
+
+    //Change text to relate to images on load.
+    document.getElementById('modalLabel').innerText = "Driveway and garage rebuild"
 
     let count = 0; 
     let left = document.getElementById('modalLeft');
     let right = document.getElementById('modalRight');
 
+    //Array of images used in carousel. 
     const bgArray = [
-        "url(https://pixabay.com/get/ga36729cdef99d0a55b6fc2a1015b23fae151e99680eed5162773904499ddeedd5a287cb36534c62e45bbab397890b1a4_1280.jpg)",
-        "url(https://pixabay.com/get/gfbcad7b2a561143ca261c8d72491cae4e5cfd121db65007b2ed9b1c948a599de32266b1eac9992996ed1dbb179bea6bd_1280.jpg)",
-        "url(https://pixabay.com/get/g915c157a64edcf05c537bfebc0f77d258cfd720f729615a012377138fe737a2dd993dd158125148c913f07d72b8153ce_1280.jpg)",
-        "url(https://pixabay.com/get/g3c931a6f2acdbffc6b22397a0bba6fe83336df8eacb290807ebaed8a0a6ceddb62f4229031e76523b460f9c4b985c534_1280.jpg)",
+        "url(https://thumbs.dreamstime.com/z/modern-office-buildings-17510275.jpg)",
+        "url(https://thumbs.dreamstime.com/z/landscape-center-city-modern-commercial-background-sunny-day-street-road-urban-office-business-architecture-building-146645192.jpg)",
+        "url(https://thumbs.dreamstime.com/z/industrial-bricklayer-installing-bricks-construction-site-close-up-75236615.jpg)",
+        "url(https://thumbs.dreamstime.com/z/new-home-construction-image-36833097.jpg)",
     ]
 
 
@@ -111,6 +116,8 @@ function carouselTwo() {
 
     carouselOpen();
 
+    document.getElementById('modalLabel').innerText = "Bar build"
+
     let count = 0; 
     let left = document.getElementById('modalLeft');
     let right = document.getElementById('modalRight');
@@ -118,10 +125,10 @@ function carouselTwo() {
     
 
     const bgArrayTwo = [
-        "url(https://pixabay.com/get/gdb6e613f2e39d634d059f1a092b8cb965d1d534f8973520b34fd48b0db50c6a5863d915ff804fef40c90b501c86b26d2_1280.jpg)",
-        "url(https://pixabay.com/get/ga24e64fd8f7cee61712731fe1ee73b1366a45d712b1178ee9efd3a68b33b19f7b709f2109c605e22aa6e214c5695a7b6_1280.jpg)",
-        "url(https://pixabay.com/get/g68dabeb4fe834262c5245056c59bae82e5decf119910d68e4fb33f53507aeea07261ab63b02d38e213cc87da15f1bfa6_1280.jpg)",
-        "url(https://pixabay.com/get/g6734f2e42a41f5799f045bcf6c09143012e07c8379c4a35f06d63e32143847c53576e5353ba0c4f8655bb63b061ee54b_1280.jpg)",
+        "url(https://thumbs.dreamstime.com/z/construction-worker-28043224.jpg)",
+        "url(https://thumbs.dreamstime.com/z/house-under-construction-87183.jpg)",
+        "url(https://thumbs.dreamstime.com/z/construction-site-17443756.jpg)",
+        "url(https://thumbs.dreamstime.com/z/roofers-lay-install-asphalt-shingles-roof-repair-two-roofers-roofing-construction-asphalt-shingles-roofers-lay-108374098.jpg)",
     ]
 
     document.getElementById('modalBackground').style.backgroundImage = bgArrayTwo[count];
