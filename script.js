@@ -85,9 +85,13 @@ function carouselOne() {
     //Change text to relate to images on load.
     document.getElementById('modalLabel').innerText = "Driveway and garage rebuild"
 
-    let count = 0; 
+    let count = 0;
     let left = document.getElementById('modalLeft');
     let right = document.getElementById('modalRight');
+
+    if (count == 0) {
+        left.style.visibility = "hidden";
+    }
 
     //Array of images used in carousel. 
     const bgArray = [
@@ -97,17 +101,36 @@ function carouselOne() {
         "url(https://thumbs.dreamstime.com/z/new-home-construction-image-36833097.jpg)",
     ]
 
+    let ArrayLength = bgArray.length;
+
 
     document.getElementById('modalBackground').style.backgroundImage = bgArray[count];
 
     left.addEventListener('click', () => {
         count--;
         document.getElementById("modalBackground").style.backgroundImage = bgArray[count];
+
+        if ((count + 1) < ArrayLength) {
+            right.style.visibility = "visible";
+        } 
+
+        if (count == 0) {
+            left.style.visibility = "hidden";
+        }
     })
 
     right.addEventListener('click', () => {
         count++;
         document.getElementById("modalBackground").style.backgroundImage = bgArray[count];
+
+        if ((count + 1) >= ArrayLength) {
+            right.style.visibility = "hidden";
+        } 
+
+        if (count > 0) {
+            left.style.visibility = "visible";
+        }
+
     })
 }
 
@@ -116,31 +139,54 @@ function carouselTwo() {
 
     carouselOpen();
 
-    document.getElementById('modalLabel').innerText = "Bar build"
+    document.getElementById('modalLabel').innerText = "Kitchen Refurbishment"
 
     let count = 0; 
     let left = document.getElementById('modalLeft');
     let right = document.getElementById('modalRight');
 
+    if (count == 0) {
+        left.style.visibility = "hidden";
+    }
+
     
 
     const bgArrayTwo = [
-        "url(https://thumbs.dreamstime.com/z/construction-worker-28043224.jpg)",
-        "url(https://thumbs.dreamstime.com/z/house-under-construction-87183.jpg)",
-        "url(https://thumbs.dreamstime.com/z/construction-site-17443756.jpg)",
-        "url(https://thumbs.dreamstime.com/z/roofers-lay-install-asphalt-shingles-roof-repair-two-roofers-roofing-construction-asphalt-shingles-roofers-lay-108374098.jpg)",
+        "url(kitchen1.webp)",
+        "url(kitchen2.webp)",
+        "url(kitchen3.webp)",
+        "url(kitchen4.webp)",
+        "url(kitchen5.webp)"
     ]
+
+    let ArrayLength = bgArrayTwo.length;
 
     document.getElementById('modalBackground').style.backgroundImage = bgArrayTwo[count];
 
     left.addEventListener('click', () => {
         count--;
         document.getElementById("modalBackground").style.backgroundImage = bgArrayTwo[count];
+
+        if ((count + 1) < ArrayLength) {
+            right.style.visibility = "visible";
+        } 
+
+        if (count == 0) {
+            left.style.visibility = "hidden";
+        }
     })
 
     right.addEventListener('click', () => {
         count++;
         document.getElementById("modalBackground").style.backgroundImage = bgArrayTwo[count];
+
+        if ((count + 1) >= ArrayLength) {
+            right.style.visibility = "hidden";
+        } 
+
+        if (count > 0) {
+            left.style.visibility = "visible";
+        }
     })
 
 }
