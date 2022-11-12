@@ -152,11 +152,13 @@ function carouselTwo() {
     
 
     const bgArrayTwo = [
-        "url(kitchen1.webp)",
         "url(kitchen2.webp)",
         "url(kitchen3.webp)",
         "url(kitchen4.webp)",
-        "url(kitchen5.webp)"
+        "url(kitchen5.webp)",
+        "url(kitchen7.webp)",
+        "url(kitchen8.webp)",
+        "url(kitchen9.webp)",
     ]
 
     let ArrayLength = bgArrayTwo.length;
@@ -208,6 +210,7 @@ function carouselOpen() {
 
 //Close image gallery modal
 function carouselClose() {
+    window.location.reload(true);
     document.getElementById('imageModal').classList.toggle('active');
 }
 
@@ -268,3 +271,4 @@ function contactScroll() {
 }
 
     
+
