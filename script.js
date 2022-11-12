@@ -210,10 +210,13 @@ function carouselOpen() {
 
 //Close image gallery modal
 function carouselClose() {
-    //Reloading page resets variables in image carousel. 
-    window.location.reload(true);
-    document.getElementById('imageModal').classList.toggle('active');
+
     projectsScroll();
+    //Reloading window resets image carousel variables.
+    document.getElementById('imageModal').classList.toggle('active');
+    window.location.reload();
+
+    
 }
 
 
