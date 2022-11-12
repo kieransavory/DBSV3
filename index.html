@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="shortcut icon" href="dbsfavicon.png" type="image/x-icon">
     <title>DBS Building Services</title>
-    <meta name="description" content="DBS Building Services Cheltenham. Offering new builds, rebuilds, extensions, refinishes and more in Cheltenham and the surrounding areas.">
+    <meta name="description" content="DBS Building Services Cheltenham. Offering new builds, rebuilds, extensions, refinishes and more in Cheltenham, Gloucestershire and the surrounding areas.">
 </head>
 <body>
 
@@ -15,7 +15,7 @@
 
     <nav id="mobileNav" class="mobilenavlist">
 
-        <button name="Close Menu" onclick="menuToggle();" class="menuclose">X</button>
+        <button aria-label="Close Navigation Menu" name="Close Menu" onclick="menuToggle();" class="menuclose">&times;</button>
         
         <ul>
             <li><a aria-label="Home" onclick="menuToggleHome();">Home</a></li>
@@ -36,11 +36,11 @@
         <a onclick="homeScroll();" ><img src="dbslogo.webp" alt="DBS Building Services Logo"></a>
         
         <ul>
-            <li><a id="homeNav" aria-label="Home" onclick="homeScroll();">Home</a></li>
-            <li><a id="aboutNav" aria-label="About" onclick="aboutScroll();">About</a></li>
-            <li><a id="designNav" aria-label="DBS Design" onclick="designScroll();">DBS Design</a></li>
-            <li><a id="projectNav" aria-label="Projects" onclick="projectsScroll();">Projects</a></li>
-            <li><a style="color: blue;" id="contactNav" aria-label="Contact Us" onclick="contactScroll();">Contact</a></li>
+            <li><a rel="nofollow" id="homeNav" aria-label="Home" onclick="homeScroll();">Home</a></li>
+            <li><a rel="nofollow" id="aboutNav" aria-label="About" onclick="aboutScroll();">About</a></li>
+            <li><a rel="nofollow" id="designNav" aria-label="DBS Design" onclick="designScroll();">DBS Design</a></li>
+            <li><a rel="nofollow" id="projectNav" aria-label="Projects" onclick="projectsScroll();">Projects</a></li>
+            <li><a rel="nofollow" style="color: blue;" id="contactNav" aria-label="Contact Us" onclick="contactScroll();">Contact</a></li>
         </ul>
 
     <!-- Hamburger menu and relative functionality -->
@@ -160,6 +160,10 @@
     <footer class="footer">
     </footer>
 
+    <section class="subfooter">
+        <span style="text-align: center; display: block; padding: 2px;">Copyright DBS Building Services.</span>
+    </section>
+
 
 
     <!-- Top Return Button -->
@@ -172,3 +176,6 @@
 <script src="script.js" defer></script>
 </body>
 </html>
+
+
+<!-- Developed by Kieran Savory for DBS Building Services. -->

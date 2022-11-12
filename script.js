@@ -99,7 +99,7 @@ function carouselOne() {
         "url(https://thumbs.dreamstime.com/z/landscape-center-city-modern-commercial-background-sunny-day-street-road-urban-office-business-architecture-building-146645192.jpg)",
         "url(https://thumbs.dreamstime.com/z/industrial-bricklayer-installing-bricks-construction-site-close-up-75236615.jpg)",
         "url(https://thumbs.dreamstime.com/z/new-home-construction-image-36833097.jpg)",
-    ]
+    ];
 
     let ArrayLength = bgArray.length;
 
@@ -159,7 +159,7 @@ function carouselTwo() {
         "url(kitchen7.webp)",
         "url(kitchen8.webp)",
         "url(kitchen9.webp)",
-    ]
+    ];
 
     let ArrayLength = bgArrayTwo.length;
 
@@ -275,5 +275,8 @@ function contactScroll() {
     window.scrollTo(0, newScroll);
 }
 
+
+
+//Developed by Kieran Savory for DBS Building Services.
     
 

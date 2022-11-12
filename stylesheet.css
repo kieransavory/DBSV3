@@ -465,6 +465,12 @@
     background-color: rgb(70, 80, 90);
 }
 
+.subfooter{
+    background-color: rgb(38, 46, 55);
+    font-size: 12px;
+    color: whitesmoke;
+}
+
 
 
 
@@ -871,7 +877,6 @@
     .modalcenter{
         width: 80vw;
         height: 80vh;
-        border: 1px dashed white;
     }
 
     .modalLabel{
@@ -889,12 +894,38 @@
        display: none !important;
     }
 
+/* Contact page styling for mobile devices. */
+
+    .contactus h2{
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 100;
+        margin-top: 75px;
+        padding: 10px;
+        color: whitesmoke;
+        text-align: center;
+    }
+    
+    .contactus p{
+        color: whitesmoke;
+        font-style: italic;
+        transition: all 0.5s;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 100;
+        margin: 10px;
+    }
+
 
    
 
     
    
 }
+
+/*Developed by Kieran Savory for DBS Building Services.*/
 
 
 
