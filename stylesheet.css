@@ -419,9 +419,10 @@
 
 
 .modalcenter{
-    transition: all 0.5s;
+    transition: all .75s ease-in-out;
     background-position: center;
     background-size: cover;
+    object-fit: cover;
     width: 80vw;
     height: 80vh;
 }
