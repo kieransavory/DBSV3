@@ -83,7 +83,7 @@ function carouselOne() {
     carouselOpen();
 
     //Change text to relate to images on load.
-    document.getElementById('modalLabel').innerText = "Driveway and garage rebuild"
+    document.getElementById('modalLabel').innerText = "Loft conversion - ongoing project."
 
     let count = 0;
     let left = document.getElementById('modalLeft');
@@ -95,10 +95,10 @@ function carouselOne() {
 
     //Array of images used in carousel. 
     const bgArray = [
-        "url(https://thumbs.dreamstime.com/z/modern-office-buildings-17510275.jpg)",
-        "url(https://thumbs.dreamstime.com/z/landscape-center-city-modern-commercial-background-sunny-day-street-road-urban-office-business-architecture-building-146645192.jpg)",
-        "url(https://thumbs.dreamstime.com/z/industrial-bricklayer-installing-bricks-construction-site-close-up-75236615.jpg)",
-        "url(https://thumbs.dreamstime.com/z/new-home-construction-image-36833097.jpg)",
+        "url(loft1.webp)",
+        "url(loft2.webp)",
+        "url(loft6.webp)",
+        "url(loft3.webp)",
     ];
 
     let ArrayLength = bgArray.length;

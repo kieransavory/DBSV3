@@ -346,6 +346,7 @@
     margin: 10px;
     filter: brightness(100%);
     cursor: pointer;
+    object-fit: cover;
 }
 
 .gallerydiv img:hover{
