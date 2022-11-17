@@ -153,8 +153,28 @@
 
 
     <section id="contactSection" class="contactus">
-        <h2>Contact Us</h2>
-        <p>Send us a message</p>
+
+        <div class="contactform">
+
+            <h2>Contact Us</h2>
+
+            <form id="contact-form" method="post" action="contacthandler.php" class="contactforms">
+
+                <input name="name" class="textbox" type="text" placeholder="Your Name" required>
+                <br>
+                <input name="email" class="textbox" type="email" placeholder="Your Email Address" required>
+                <br>
+                <textarea onkeydown="messageCount();" id="messagebox" name="message" class="textbox message" type="text" placeholder="Your Message" required></textarea>
+                <br>
+                <span id="messageCounter">0</span>
+                <input id="messagebutton" type="submit" class="submitbutton" value="Send Message" disabled>
+
+            </form>
+            
+        </div>
+
+        <div class="contactright"></div>
+
     </section>
 
     <footer class="footer">

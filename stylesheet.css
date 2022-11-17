@@ -433,31 +433,100 @@
 .contactus{
     width: 100vw;
     height: 100vh;
-    background-color: slategray;
 }
 
+/* Initial section setup. (Contactform is left side.) */
 
-.contactus h2{
+.contactright{
+    width: 40vw;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-color: lightgrey;
+    z-index: -5;
+}
+
+.contactform{
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    background-color: slategray;
+    position: absolute;
+    left: 0;
+}
+
+.contactforms{
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactforms span{
+    display: block;
+    color: whitesmoke;
+    font-size: 20px;
+    width: 60%;
+}
+
+.contactform h2{
     display: block;
     text-align: center;
-    font-size: 75px;
+    font-size: 50px;
     font-weight: 100;
     margin-top: 65px;
     padding: 10px;
     color: whitesmoke;
-    text-align: center;
 }
 
-.contactus p{
-    color: whitesmoke;
-    font-style: italic;
+.textbox{
     transition: all 0.5s;
-    display: block;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 100;
-    margin: 10px;
+    width: 60%;
+    padding: 5px;
+    height: 50px;
+    background-color: whitesmoke;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    border: none;
+    resize: none;
 }
+
+.textbox:hover{
+    transition: all 0.5s;
+    outline: 1px solid black;
+}
+
+.submitbutton{
+    transition: all 0.5s;
+    padding: 15px;
+    background-color: slategray;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    font-size: 20px;
+    cursor: not-allowed;
+}
+
+
+.message{
+    height: 40%;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer styling */
 
 .footer{
     width: 100vw;

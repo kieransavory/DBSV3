@@ -277,6 +277,61 @@ function contactScroll() {
 
 
 
+function messageCount() {
+
+    const buttonArrayOne = [
+    "transition: all 0.5s;",
+    "padding: 15px;",
+    "background-color: whitesmoke;",
+    "border: 2px solid slategray;",
+    "color: slategrey;",
+    "font-size: 20px;",
+    "cursor: pointer;"
+    ]
+
+    let message = document.getElementById('messagebox').value;
+
+    let messageLength = message.length;
+
+    let counter = document.getElementById('messageCounter');
+
+    console.log(typeof messageLength);
+
+    //Set counter to length of message.
+    counter.innerText = messageLength;
+
+    let button = document.getElementById('messagebutton');
+
+    if (messageLength >= 30) {
+        button.style.backgroundColor = "whitesmoke";
+        button.style.cursor = "pointer";
+        button.style.color = "slategrey";
+        enableButton();
+        
+    } else if (messageLength <= 30) {
+        button.style.backgroundColor = "slategrey";
+        button.style.cursor = "not-allowed";
+        button.style.color = "whitesmoke";
+        disableButton();
+    };
+
+
+
+    function disableButton() {
+        document.getElementById('messagebutton').disabled = true;
+    }
+
+    function enableButton() {
+        document.getElementById('messagebutton').disabled = false;
+    }
+
+
+       
+
+}
+
+
+
 //Developed by Kieran Savory for DBS Building Services.
     
 
