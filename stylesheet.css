@@ -443,8 +443,31 @@
     position: absolute;
     right: 0;
     background-color: lightgrey;
-    z-index: -5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+.contactright a {
+    transition: all 0.5s;
+    display: block;
+    z-index: 100;
+    color: black;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    margin: 50px;
+    cursor: pointer;
+}
+
+.contactright a:hover {
+    transition: all 0.5s;
+    opacity: 0.75;
+    transform: scale(1.1);
+}
+
 
 .contactform{
     margin: auto;
@@ -516,30 +539,6 @@
     height: 40%;
     text-align: left;
 }
-
-
-
-
-
-
-
-
-
-
-/* Footer styling */
-
-.footer{
-    width: 100vw;
-    height: 10vh;
-    background-color: rgb(70, 80, 90);
-}
-
-.subfooter{
-    background-color: rgb(38, 46, 55);
-    font-size: 12px;
-    color: whitesmoke;
-}
-
 
 
 
@@ -965,29 +964,36 @@
 
 /* Contact page styling for mobile devices. */
 
-    .contactus h2{
-        display: block;
-        text-align: center;
-        font-size: 40px;
-        font-weight: 100;
-        margin-top: 75px;
-        padding: 10px;
-        color: whitesmoke;
-        text-align: center;
-    }
-    
-    .contactus p{
-        color: whitesmoke;
-        font-style: italic;
-        transition: all 0.5s;
-        display: block;
-        text-align: center;
-        font-size: 20px;
-        font-weight: 100;
-        margin: 10px;
-    }
+   /* Desktop contact us page styling */
 
+.contactus{
+    width: 100vw;
+    height: 100vh;
+    background-color: slategray;
+}
 
+.contactright {
+    display: none;
+}
+
+.contactform{
+    width: 100vw;
+}
+
+.contactforms{
+    height: 60%;
+}
+
+.textbox {
+    width: 80vw;
+}
+
+.contactforms span{
+    display: block;
+    color: whitesmoke;
+    font-size: 20px;
+    width: 85%;
+}
    
 
     
