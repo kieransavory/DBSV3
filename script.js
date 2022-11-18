@@ -476,12 +476,14 @@ function messageCount() {
 
     let counter = document.getElementById('messageCounter');
 
-    console.log(typeof messageLength);
 
     //Set counter to length of message.
     counter.innerText = messageLength;
 
+
     let button = document.getElementById('messagebutton');
+
+    if (message.trim() != "") {
 
     if (messageLength >= 30) {
         button.style.backgroundColor = "whitesmoke";
@@ -494,19 +496,19 @@ function messageCount() {
         button.style.cursor = "not-allowed";
         button.style.color = "whitesmoke";
         disableButton();
-    };
 
-
-
+    }
     function disableButton() {
         document.getElementById('messagebutton').disabled = true;
+        document.getElementById('messagebutton').title = "Please fill in the form in order to send a message.";
     }
 
     function enableButton() {
         document.getElementById('messagebutton').disabled = false;
+        document.getElementById('messagebutton').title = "Send message";
     }
 
-
+}
        
 
 }
