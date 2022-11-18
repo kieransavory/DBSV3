@@ -579,7 +579,7 @@
 
 
 
-/* Mobile media queries */
+/************************************************************************************************************** Mobile media queries */
 
 @media screen and (max-width: 450px) {
 
@@ -999,6 +999,57 @@
 
     
    
+}
+
+
+
+
+/* ****************************************************************************************************************************TABLET STYLING */
+
+@media screen and (min-width: 480px) and (max-width: 1024px){
+
+    .selectors{
+        height: auto;
+    }
+
+    .navbar img{
+        width: 12%;
+    }
+
+    .navbar ul li a {
+        font-size: 20px;
+    }
+
+    .aboutbox {
+        height: 70vh;
+    }
+
+    .dbsdesigndiv{
+        width: 80vw;
+        height: 50vw;
+    }
+
+    .gallerydiv{
+        width: 99vw;
+        height: 65vh;
+    }
+
+    .gallerydiv img{
+        width: 25vw;
+        height: 30vh;
+    }
+
+    .textbox{
+        width: 90%;
+    }
+
+    .contactright a{
+        font-size: 30px;
+        width: 88%;
+        margin: 25px;
+    }
+
+
 }
 
 /*Developed by Kieran Savory for DBS Building Services.*/

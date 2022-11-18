@@ -1,4 +1,4 @@
-// Functions to change background via selector buttons on hero section of landing page. 
+// Functions to change background via selector buttons on hero section of landing page. /////////////////////////
 
 function bgChangerOne() {
 
@@ -7,7 +7,7 @@ function bgChangerOne() {
     let buttonThree = document.getElementById('heroButtonThree');
     let heroOne = document.getElementById('heroOne')
     
-        heroOne.style.backgroundImage = "url(dbskitchen.jpg)";
+        heroOne.style.backgroundImage = "url(dbskitchen.webp)";
         buttonOne.style.backgroundColor = "navy";
         buttonTwo.style.backgroundColor = "white";
         buttonThree.style.backgroundColor = "white";
@@ -20,7 +20,7 @@ function bgChangerTwo() {
     let buttonThree = document.getElementById('heroButtonThree');
     let heroOne = document.getElementById('heroOne')
     
-        heroOne.style.backgroundImage = "url(DBSheader2.jpg)";
+        heroOne.style.backgroundImage = "url(DBSheader2.webp)";
         buttonOne.style.backgroundColor = "white";
         buttonTwo.style.backgroundColor = "navy";
         buttonThree.style.backgroundColor = "white";
@@ -34,7 +34,7 @@ function bgChangerThree() {
     let buttonThree = document.getElementById('heroButtonThree');
     let heroOne = document.getElementById('heroOne')
     
-        heroOne.style.backgroundImage = "url(dbsdesign.jpg)";
+        heroOne.style.backgroundImage = "url(dbsdesign.webp)";
         buttonOne.style.backgroundColor = "white";
         buttonTwo.style.backgroundColor = "white";
         buttonThree.style.backgroundColor = "navy";
@@ -42,7 +42,7 @@ function bgChangerThree() {
 }
 
 
-// Mobile hamburger menu operation
+///////////////////////////////////////// Mobile hamburger menu operation //////////////////////////////////////
 
 
 function menuToggle() {
@@ -73,6 +73,9 @@ function menuToggleContact() {
     contactScroll();
     menuToggle();
 }
+
+
+/////////////////////////////////////////// Image carousels //////////////////////////////////////////////////
 
 
 
@@ -193,6 +196,184 @@ function carouselTwo() {
 
 }
 
+//THIRD CAROUSEL LOGIC
+function carouselThree() {
+
+    carouselOpen();
+
+    document.getElementById('modalLabel').innerText = "Extension - ongoing project."
+
+    let count = 0; 
+    let left = document.getElementById('modalLeft');
+    let right = document.getElementById('modalRight');
+
+    if (count == 0) {
+        left.style.visibility = "hidden";
+    }
+
+    
+
+    const bgArrayThree = [
+        "url(benhall1.webp)",
+        "url(benhall2.webp)",
+        "url(benhall3.webp)",
+        "url(benhall4.webp)",
+        "url(benhall5.webp)",
+        "url(benhall6.webp)",
+    ];
+
+    let ArrayLength = bgArrayThree.length;
+
+    document.getElementById('modalBackground').style.backgroundImage = bgArrayThree[count];
+
+    left.addEventListener('click', () => {
+        count--;
+        document.getElementById("modalBackground").style.backgroundImage = bgArrayThree[count];
+
+        if ((count + 1) < ArrayLength) {
+            right.style.visibility = "visible";
+        } 
+
+        if (count == 0) {
+            left.style.visibility = "hidden";
+        }
+    })
+
+    right.addEventListener('click', () => {
+        count++;
+        document.getElementById("modalBackground").style.backgroundImage = bgArrayThree[count];
+
+        if ((count + 1) >= ArrayLength) {
+            right.style.visibility = "hidden";
+        } 
+
+        if (count > 0) {
+            left.style.visibility = "visible";
+        }
+    })
+
+}
+
+//FOURTH CAROUSEL LOGIC
+function carouselFour() {
+
+    carouselOpen();
+
+    document.getElementById('modalLabel').innerText = "Extension - ongoing project."
+
+    let count = 0; 
+    let left = document.getElementById('modalLeft');
+    let right = document.getElementById('modalRight');
+
+    if (count == 0) {
+        left.style.visibility = "hidden";
+    }
+
+    
+
+    const bgArrayFour = [
+        "url(glosroad1.webp)",
+        "url(glosroad2.webp)",
+        "url(glosroad3.webp)",
+        "url(glosroad4.webp)",
+    ];
+
+    let ArrayLength = bgArrayFour.length;
+
+    document.getElementById('modalBackground').style.backgroundImage = bgArrayFour[count];
+
+    left.addEventListener('click', () => {
+        count--;
+        document.getElementById("modalBackground").style.backgroundImage = bgArrayFour[count];
+
+        if ((count + 1) < ArrayLength) {
+            right.style.visibility = "visible";
+        } 
+
+        if (count == 0) {
+            left.style.visibility = "hidden";
+        }
+    })
+
+    right.addEventListener('click', () => {
+        count++;
+        document.getElementById("modalBackground").style.backgroundImage = bgArrayFour[count];
+
+        if ((count + 1) >= ArrayLength) {
+            right.style.visibility = "hidden";
+        } 
+
+        if (count > 0) {
+            left.style.visibility = "visible";
+        }
+    })
+
+}
+
+//FIFTH CAROUSEL LOGIC
+function carouselFive() {
+
+    carouselOpen();
+
+    document.getElementById('modalLabel').innerText = "Standalone build"
+
+    let count = 0; 
+    let left = document.getElementById('modalLeft');
+    let right = document.getElementById('modalRight');
+
+    if (count == 0) {
+        left.style.visibility = "hidden";
+    }
+
+    
+
+    const bgArrayFive = [
+        "url(whaddon1.webp)",
+        "url(whaddon2.webp)",
+        "url(whaddon3.webp)",
+        "url(whaddon4.webp)",
+        "url(whaddon5.webp)",
+        "url(whaddon6.webp)",
+        "url(whaddon7.webp)",
+        "url(whaddon8.webp)",
+        "url(whaddon10.webp)",
+        "url(whaddon11.webp)",
+        "url(whaddon13.webp)",
+        "url(whaddon14.webp)",
+    ];
+
+    let ArrayLength = bgArrayFive.length;
+
+    document.getElementById('modalBackground').style.backgroundImage = bgArrayFive[count];
+
+    left.addEventListener('click', () => {
+        count--;
+        document.getElementById("modalBackground").style.backgroundImage = bgArrayFive[count];
+
+        if ((count + 1) < ArrayLength) {
+            right.style.visibility = "visible";
+        } 
+
+        if (count == 0) {
+            left.style.visibility = "hidden";
+        }
+    })
+
+    right.addEventListener('click', () => {
+        count++;
+        document.getElementById("modalBackground").style.backgroundImage = bgArrayFive[count];
+
+        if ((count + 1) >= ArrayLength) {
+            right.style.visibility = "hidden";
+        } 
+
+        if (count > 0) {
+            left.style.visibility = "visible";
+        }
+    })
+
+}
+
 
 
 
@@ -232,7 +413,7 @@ function carouselClose() {
 
 
 
-//Document Onscroll events
+////////////////////////////////////////////////////// Document Onscroll events /////////////////////////////////////
 document.addEventListener("scroll", () => {
 
     let scrollPosition = window.scrollY; 
@@ -332,6 +513,6 @@ function messageCount() {
 
 
 
-//Developed by Kieran Savory for DBS Building Services.
+//Developed by Kieran Savory for DBS Building Services
     
 
