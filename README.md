@@ -12,3 +12,5 @@ aforementioned reasons.
 
 - Creation of contact form using PHP as back end language. </br> 
 - Further experience and increased knowledge around client side contact form validation and string manipulation for purposes of client safety. </br>
+- Testing user input dynamically with onkeyup functions. 
+- Basic server side rendering to check if input fields are empty. 
