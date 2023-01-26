@@ -14,4 +14,5 @@ aforementioned reasons.
 - Further experience and increased knowledge around client side contact form validation and string manipulation for purposes of client safety. </br>
 - Testing user input dynamically with onkeyup functions. </br>
 - Basic server side rendering to check if input fields are empty. </br>
-- Storing image url's inside of an array and utilising a variable with an incrementation function to create an image carousel with minimal HTML. 
+- Storing image url's inside of an array and utilising a variable with an incrementation function to create an image carousel with minimal HTML. </br>
+- Scalable spam prevention utilising array of usernames and converting string to uppercase to check against input on key down. </br>
