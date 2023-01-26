@@ -16,3 +16,7 @@ aforementioned reasons.
 - Basic server side rendering to check if input fields are empty. </br>
 - Storing image url's inside of an array and utilising a variable with an incrementation function to create an image carousel with minimal HTML. </br>
 - Scalable spam prevention utilising array of usernames and converting string to uppercase to check against input on key down or on element onchange </br>
+
+<h2>What I would do differently</h2>
+
+-Make use of the Vue CDN to have a light version of Vue to assist in creation of the Carousel component. 
